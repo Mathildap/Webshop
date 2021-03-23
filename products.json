@@ -1,0 +1,33 @@
+[
+    {
+        "id": 0,
+        "productname": "Blanket",
+        "price": 199,
+        "img": "./img/blanket.jpg"
+    },{
+        "id": 1,
+        "productname": "Wooden tray",
+        "price": 249,
+        "img": "./img/wooden-tray.jpg"
+    },{
+        "id": 2,
+        "productname": "Vase",
+        "price": 299,
+        "img": "./img/vase.jpg"
+    },{
+        "id": 3,
+        "productname": "Mirror",
+        "price": 499,
+        "img": "./img/gold-mirror.jpg"
+    },{
+        "id": 4,
+        "productname": "Couch",
+        "price": 2999,
+        "img": "./img/couch.jpg"
+    },{
+        "id": 5,
+        "productname": "Shelf",
+        "price": 399,
+        "img": "./img/shelf.jpg"
+    }
+]

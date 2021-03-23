@@ -1,0 +1,262 @@
+body {
+    margin: 0px;
+    font-family: 'News Cycle', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* ----------------- HEADER / NAV -----------------*/
+header {
+    font-family: 'News Cycle', sans-serif;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+nav,ul {
+    display: flex;
+}
+h1 {
+    margin: 20px;
+}
+ul {
+    list-style: none;
+    margin: auto;
+}
+li a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+.cart-box {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+.fas {
+    margin-right: 10px;
+}
+.cart-items {
+    position: absolute;
+    width: 15px;
+    top: -9px;
+    right: 0;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    background-color: rgb(128, 103, 81);
+    border-radius: 5px;
+}
+.navbarbtn-signin, #signOutBtn {
+    margin: 20px 10px;
+    padding: 10px;
+    background-color: rgb(42, 154, 142);
+    color: white;
+    border: 1px solid white;
+    outline: none;
+}
+.navbarbtn-signin:hover, #signOutBtn:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: rgb(38, 139, 129);
+}
+/* ----------------- SHOPPINGCART -----------------*/
+.shopping-cart-box {
+    position: fixed;
+    top: 93px;
+    right: 0;
+    width: 350px;
+    height: 80vh;
+    background-color: rgb(230, 212, 189);
+    box-shadow: 0px 0px 5px 2px rgb(135, 123, 117);
+    z-index: 11;
+    overflow: scroll;
+}
+.shopping-cart-h4 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+/* #shoppingCartProducts {
+    width: 100%;
+    height: 100%;
+} */
+.shopping-cart-product {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 90%;
+    height: 75px;
+}
+#removeOneProduct {
+    color: rgb(131, 113, 113);
+    font-size: 12px;
+    position: relative;
+    top: 9px;
+    cursor: pointer;
+}
+#closeShopCart {
+    cursor: pointer;
+}
+.shop-cart-img {
+    width: 50px;
+}
+#cartTotalAndBtn {
+    text-align: center;
+}
+.total-amount-cart {
+    position: relative;
+    margin-bottom: 10px;
+}
+#clearCartBtn {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    background-color: rgb(42, 154, 142);
+    color: white;
+    border: none;
+    outline: none;
+    z-index: 12;
+}
+#clearCartBtn:hover {
+    border: none;
+    background-color:  rgb(28, 91, 84);
+}
+
+/* ----------------- STARTPAGE -----------------*/
+main {
+    display: flex;
+    position: relative;
+}
+section {
+    font-family: 'News Cycle', sans-serif;
+    background-color: white;
+    width: 40%;
+    height: 200px;
+    border: 4px solid rgb(138, 91, 65);
+    padding: 20px;
+    margin: auto -70px;
+    position: relative;
+    z-index: 2;
+}
+h2 {
+    margin: 0px;
+}
+img {
+    position: relative;
+    width: 50%;
+    z-index: 1;
+}
+
+/* ----------------- PRODUCT PAGE -----------------*/
+h4 {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.single-product {
+    position: relative;
+    width: 33%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.product-img {
+    width: 90%;
+    height: 542px;
+    transition: all 0.2s ease;
+}
+.product-img:hover {
+    opacity: 40%;
+}
+.bag-btn {
+    position: absolute;
+    width: 120px;
+    height: 35px;
+    bottom: 23%;
+    right: 5%;
+    background-color: rgb(138, 91, 65);
+    color: white;
+    border: 0;
+    z-index: 9;
+    transition: all 0.3s ease;
+}
+.bag-btn:hover {
+    background-color: rgb(69, 58, 52);
+}
+h5 {
+    font-family: 'News Cycle', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+h6 {
+    font-family: 'News Cycle', sans-serif;
+    margin: 0px;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+/* ----------------- FOOTER -----------------*/
+footer {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(128, 103, 81);
+    color: white;
+}
+
+/* ----- LOG IN BOX ----- */
+.logInBox {
+    position: fixed;
+    margin: 40px 30%;
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    background-color: rgb(223, 213, 203);
+    border: 1px solid black;
+    z-index: 3;
+}
+h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+input {
+    margin: 5px;
+    width: 70%;
+}
+#logInBoxBtn, #addUserBtn, #backBtn {
+    border: 0;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: rgb(42, 154, 142);
+    color: white;
+}
+#logInBoxBtn:hover, #addUserBtn:hover, #backBtn:hover {
+    background-color: white;
+    color: rgb(42, 154, 142);
+}
+#incorrectMessage {
+    color: red;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+/* ----- LOG IN BOX ----- */
+#loggedInUName {
+    color: rgb(133, 107, 63);
+    padding-bottom: 3px;
+    border-bottom: 1px solid rgba(151, 122, 73, 0.603);
+    margin-left: 25px;
+}
+#creAccLink {
+    color: black;
+    text-decoration: none;
+}
+#creAccLink:hover {
+    color: rgba(0, 0, 0, 0.372);
+}
