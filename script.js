@@ -184,6 +184,7 @@ function loggedInPage() {
     <section id="section">
     <h2>Welcome</h2>
     <p>Now you can shop!</p>
+    <div id="arrow"><a href="#products"><i class="fasArrow fas fa-chevron-down"></i></a></div>
     </section>`;
 };
 
