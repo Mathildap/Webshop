@@ -57,6 +57,7 @@ li a{
     color: white;
     border: 1px solid white;
     outline: none;
+    border-radius: 3px;
 }
 .navbarbtn-signin:hover, #signOutBtn:hover {
     border: 1px solid black;
@@ -80,10 +81,6 @@ li a{
     justify-content: space-between;
     margin: 10px;
 }
-/* #shoppingCartProducts {
-    width: 100%;
-    height: 100%;
-} */
 .shopping-cart-product {
     display: flex;
     justify-content: space-between;
@@ -96,6 +93,8 @@ li a{
     font-size: 12px;
     position: relative;
     top: 9px;
+}
+.removeItem {
     cursor: pointer;
 }
 #closeShopCart {
@@ -133,7 +132,7 @@ main {
 section {
     font-family: 'News Cycle', sans-serif;
     background-color: white;
-    width: 40%;
+    width: 50%;
     height: 200px;
     border: 4px solid rgb(138, 91, 65);
     padding: 20px;
@@ -179,13 +178,12 @@ h4 {
 }
 .single-product {
     position: relative;
-    width: 33%;
+    width: 50%;
     text-align: center;
     margin-bottom: 10px;
 }
 .product-img {
     width: 90%;
-    height: 542px;
     transition: all 0.2s ease;
 }
 .product-img:hover {
@@ -202,13 +200,15 @@ h4 {
     border: 0;
     z-index: 9;
     transition: all 0.3s ease;
+    border-radius: 2px;
+    outline: none;
 }
 .bag-btn:hover {
     background-color: rgb(69, 58, 52);
 }
 h5 {
     font-family: 'News Cycle', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     letter-spacing: 1px;
     margin: 0;
 }
